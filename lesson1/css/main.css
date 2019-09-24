@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix {
+    content: "";
+    clear: both;
+    display: block;
+}
+.main {
+    margin: 0 auto;
+    width: 1280px;
+    min-height: 100%;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    height: 323px;
+    background: #445162;
+    padding: 50px;
+}
+header h2 {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 60px;
+    font-weight: 400;
+}

@@ -40,7 +40,7 @@ h2 {
     color: #474747;
     font-family: Montserrat;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: -1.19px;
 }
 h3{
@@ -115,6 +115,11 @@ hr {
     padding-top: 90px;
     width: 700px;
     text-align: center;
+    color: #3f3f3f;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
 }
 .btn-more {
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
@@ -165,7 +170,7 @@ hr {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    margin: 0px auto;}
+    margin: 0 auto;}
 .why {
     grid-area: why;
     text-align: center;
@@ -175,6 +180,21 @@ hr {
     grid-template-columns: 1fr 337px 1fr;
     grid-column-gap: 35px;
     text-align: left;
+}
+.itemWhy {
+    color: #6f6f6e;
+}
+.itemWhy h4 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1.82px;
+}
+.itemWhy p {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
 }
 .itemWhyDoctor {
     grid-column-start: 2;
@@ -249,6 +269,12 @@ hr {
 .new   {
     grid-area: new;
     text-align: center;
+    height: 130px;
+    padding-top: 50px;
+    background-color: #e2e2e2;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 30px;
 }
 footer     {
     grid-area:footer ;
@@ -264,7 +290,7 @@ footer h4 {
 footer:after {
     height: 130px;
     background-color: #1a1a1a;
-    content: "Copyright © 2017. PSDFreebies.com  | Best PSD Template for freelancer and agencies ";
+    content: "<div> Copyright © 2017. PSDFreebies.com  | Best PSD Template for freelancer and agencies </div>";
 }
 
 @media (max-width: 600px) {

@@ -19,6 +19,10 @@
     background-color: white;
     font-family: 'Arial MT;
 }
+.main:after {
+    text-align: center;
+    content: "Copyright 2014 Product name PSD HTML CSS";
+}
 header {
     height: 323px;
     background: #445162;
@@ -54,8 +58,9 @@ header li {
 .about {
     height: 345px;
 }
-.about img{
+.about video {
     float: right;
+    width: 430px;
 }
 h3 {
     color: #445161;
@@ -133,7 +138,6 @@ article p {
     float: left;
 }
 .buy_it_now {
-    height: 656px;
     padding: 50px 145px;
     margin-bottom: 60px;
 }
@@ -144,13 +148,17 @@ article p {
     background: #445162;
     color: #ffffff;
     padding: 0;
-    margin: 0px 22px;
+    margin: 10px 22px;
     border: 2px solid #445162;
     border-radius: 10px;
 }
 .buy_it_now .col-sm h3{
     color: white;
     text-align: center;
+}
+.buy_it_now:after {
+    content: " ";
+    height: 100px;
 }
 .bg-price {
     text-align: center;
@@ -184,7 +192,6 @@ article p {
     margin: 15px;
 }
 footer {
-    height: 509px;
     background: #445162;
     padding: 50px 240px;
     color: white;
@@ -231,4 +238,9 @@ address a {
     border-radius: 50%;
     font-size: 20px;
     margin: 5px;
+}
+.search {
+    float: left;
+    position: absolute;
+
 }

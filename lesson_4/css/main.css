@@ -19,7 +19,7 @@
 }
 .main {
     margin: 0 auto;
-    width: 1203px;
+    width: 90%;
     min-height: 100%;
     background-color: white;
     font-family: "Open Sans";
@@ -44,7 +44,6 @@ h2 {
     letter-spacing: -1.19px;
 }
 h3{
-    color: #494949;
     font-family: Montserrat;
     font-size: 45px;
     font-weight: 700;
@@ -136,6 +135,11 @@ hr {
     display: inline-block;
     text-decoration: none;
     margin-top: 10px;
+    transition-duration: .5s;
+}
+.btn-more:hover {
+    transform: scale(1.5, 1.2);
+    transition-duration: 5s;
 }
 .proposal {
     grid-area: proposal;
@@ -144,6 +148,7 @@ hr {
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
     text-align: center;
+    color: white;
 }
 .item-pro:nth-child(1) {
     background-color: #43b1d2;
@@ -158,11 +163,17 @@ hr {
     background-color: #37c3a8;
 }
 .item-pro {
-    padding: 35px 20px;
+    padding: 70px 20px;
+}
+.item-pro h4{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+
 }
 .item-pro i {
-    color: white;
-    background-color: #1a9bdc;
+    color: black;
+    background-color: white;
     font-size: 35px;
     display: flex;
     width: 50px;
@@ -180,9 +191,13 @@ hr {
     grid-template-columns: 1fr 337px 1fr;
     grid-column-gap: 35px;
     text-align: left;
+    grid-row-gap: 97px;
+    grid-template-rows: 250px 250px;
+    padding-top: 26px;
 }
 .itemWhy {
     color: #6f6f6e;
+    padding-top: 50px;
 }
 .itemWhy h4 {
     font-family: Montserrat;
@@ -196,6 +211,20 @@ hr {
     font-weight: 400;
     line-height: 30px;
 }
+.itemWhy i {
+    color: white;
+    background-color: #1a9bdc;
+    font-size: 50px;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    align-items: center;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
 .itemWhyDoctor {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -208,10 +237,35 @@ hr {
 }
 .statistics {
     grid-area: statistics;
+    background-color: #006b9d;
+    background-image: url("../img/statistic.png");
+    color: white;
+    text-align: center;
 }
 .statGrid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    padding: 100px 100px;
+}
+.statGrid h3{
+    font-family: Montserrat;
+    font-size: 60px;
+    font-weight: 500;
+}
+.statGrid p {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: -1.52px;
+}
+.statGrid hr {
+    width: 85px;
+    height: 6px;
+    background-color: #ffffff;
+    margin: 10px auto;
+}
+.statGrid i {
+    font-size: 70px;
+    margin: 30px auto;
 }
 .works  {
     grid-area: works;
@@ -243,28 +297,64 @@ hr {
 }
 .worksButton {
     grid-area: worksButton;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .gallery {
+    color: white;
     grid-area: gallery;
     text-align: center;
+    background-image: url("../img/gallery.png");
+    background-color: #2cb29b;
+    padding-bottom: 50px;
 }
 .galleryGrid {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 34px;
     grid-row-gap: 38px;
-    justify-content: center;
 }
+.galleryGriddiv {
+    transform-style: preserve-3d;
+    position: relative;
+    backface-visibility: hidden;
+    transition: transform 1s;
+}
+.galleryGriddiv:hover {
+    transform: rotateY(180deg);
+}
+.front {
+    backface-visibility: hidden;
+    top: 0;
+    bottom: 0;
+}
+.front.back {
+    position: absolute;
+    font: 18px/1.6 Arial;
+    transform: rotateY(180deg); /* Поворачиваем текст */
+    color: #fff;
+    background-color:#2cb29b;
+    padding-top: 25px;
+}
+
+
 .team    {
     grid-area: team;
     text-align: center;
+    padding-bottom: 50px;
 }
 .teamGrid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-column-gap: 29px;
     justify-content: center;
+}
+.teamGrid a {
+    display: inline-block;
+    width: 35px;
+    font-size: 25px;
+    font-weight: 400;
 }
 .new   {
     grid-area: new;
@@ -281,19 +371,81 @@ footer     {
     background-color: black;
 }
 footer h4 {
-    color: white;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.55px;
 }
 .foterGrid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: auto 1fr 1fr 1fr;
+}
+form input{
+    border: none;
+    background-color: black;
+    border-bottom-color: white;
+    border-bottom-style: groove;
+    color:white;
+    height: 37px;
+}
+.foterGrid i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.foterGrid p {
+    opacity: 0.51;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.foterGrid ul {
+    opacity: 0.51;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4px;
 }
 footer:after {
     height: 130px;
     background-color: #1a1a1a;
     content: "<div> Copyright © 2017. PSDFreebies.com  | Best PSD Template for freelancer and agencies </div>";
 }
+.submit {
+    border: none;
+    border-radius: 23px;
+    background-color: #1a9bdc;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 130px;
+    height: 37px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
 
-@media (max-width: 600px) {
+/* Медиа запрос на зоровый телефон */
+@media (max-width: 800px) {
+    .main {
+        width: 600px;
+    }
+    .padding-main {
+        padding: 10px 114px 0 0;
+    }
     .container {
         grid-template-columns: 1fr;
     }
@@ -333,5 +485,64 @@ footer:after {
                 "team"
                 "new"
                 "footer";
+    }
+    .why {
+        text-align: left;
+    }
+    .why-grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 5px;
+        grid-template-rows: auto;
+    }
+    .itemWhyDoctor {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 400px;
+    }
+    .statGrid {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+    .statGrid hr {
+        margin: 0;
+    }
+    .worksGrid {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+                "worksHeader_1 worksHeader_1"
+                "worksHeader_2 worksHeader_2"
+                "works_box_1 works_box_2"
+                "works_box_3 works_box_3"
+                "worksButton worksButton";
+    }
+    .gallery {
+        text-align: left;
+    }
+    .galleryGrid {
+        grid-template-columns:auto auto;
+        justify-content: left;
+    }
+    .team {
+        text-align: left;
+    }
+    .teamGrid {
+        grid-template-columns:auto;
+        text-align: center;
+    }
+    .new {
+        text-align: left;
+        height: 130px;
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .foterGrid {
+        grid-template-columns:auto;
+        padding-left: 25px;
     }
 }

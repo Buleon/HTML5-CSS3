@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="main">
+<footer>
+    <div class="title_section"><h3>Buy</h3></div>
+    <div class="row">
+        <div class="col-sm">
+            <form action="#">
+                <label for="name">First name <em>*</em></label>
+                <input type="text" placeholder="Ivan" autofocus><br>
+                <label for="name">Last name <em>*</em></label>
+                <input  type="text" placeholder="Ivanov"><br>
+                <label for="name">Email <em>*</em></label>
+                <input  type="email" placeholder="Your email:" id="email"><br>
+                <fieldset>
+                    <legend>Choose your weapon</legend>
+                    <input id="weapon" list="dl_weapon">
+                </fieldset>
+                <label for="name">You color in heart <em>*</em></label>
+                <input type="color" >
+                <input type="button" value="SEND" class="send"><br>
+            </form></div>
+        <div class="col-sm">
+            <address>
+                <p><i class="fab fa-skype"></i> here_your_login_skype</p>
+                <p> 279679659</p>
+                <p><i class="fas fa-at"></i> psdhtmlcss@mail.ru</p>
+                <p><i class="fas fa-phone"></i> 80 00 4568 55 55</p>
+                <p><a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a></p>
+            </address></div></div>
+</footer>
+</div>
+</body>
+<datalist id="dl_weapon">
+    <option label="Меч" value="sword">
+    <option label="Лук" value="bow">
+    <option label="Страшный ананас" value="pineapple">
+    <option label="Пила" value="saw">
+    <option label="Молот" value="hammer">
+</datalist>
+
+</html>

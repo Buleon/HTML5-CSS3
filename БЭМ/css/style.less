@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@color-green:#81b300;
+
+.container {
+  background-color: #1f1f1f;
+  margin: 0 auto;
+  min-height: 100%;
+  display: grid;
+  padding: 30px 30px;
+    }
+.b-header{
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 50px 50px;
+  grid-row-gap: 30px;
+  padding: 0 30px;
+}
+.b-header_border-top_green {
+  border-top: 5px solid @color-green;
+}
+.b-logo_grid{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: auto 0;
+}
+.logo__description_style {
+  color: #6c6c6c;
+  font-weight: 400;
+}
+.menu_theme_green {
+  padding: 20px 30px 20px 30px;
+  background-color: @color-green;
+}
+.b-social {
+  width: 250px;
+  height: 50px;
+}
+.b-social_theme_green{
+  background-color: @color-green;
+  border-radius:0px 0px 20px 20px;
+  margin-left: auto;
+}
+.social__icon_theme {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  float: left;
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: #1f1f1f;
+  margin-right: 10px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+}
+.authoriz_pos {
+  margin: auto 0 auto auto;
+}
+.authoriz__item_style {
+  list-style-type: none;
+  float: left;
+  color: @color-green;
+  margin-left: 5px;
+   a {
+     text-decoration: none;
+     color: @color-green;
+   }
+}
+.menu__item_style{
+  list-style-type: none;
+  float: left;
+  margin-right: 20px;
+    a{
+      text-decoration: none;
+      color: white;
+    }
+}
+.search-form {
+  float: right;
+}
+.name_style {
+  font-size: 40px;
+  color: black;
+}
+.name_style:first-letter {
+  font-size: 54px;
+}
+.slider_cont {
+  padding: 30px 0;
+  background-color: #f2f2f2;
+}
+.services {
+  padding: 50px 30px;
+}
+.services_grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-column-gap: 27px;
+  grid-row-gap: 80px;
+}
+.services_theme {
+  background-color: white;
+}
+.services__viva_text {
+  text-align: center;
+  font-family: Geo;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.8px;
+}
+.viva_h4 {
+  color: @color-green;
+  font-family: Geo;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  padding-bottom: 20px;
+}
+.progect__img {
+  width: 200px;
+  height: 130px;
+}
+.progect__link {
+  text-decoration: none;
+  color: @color-green;
+  font-family: Geo;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  float: right;
+}
+.footer_grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+}

@@ -1,0 +1,147 @@
+$color-green:#81b300
+.grid_all
+  display: grid
+.padding_all
+ padding:
+  left: 30px
+  right: 30px
+*
+ margin: 0
+ padding: 0
+
+.container
+  background-color: #1f1f1f
+  margin: 0 auto
+  min-height: 100%
+  @extend .grid_all
+  padding: 30px 30px
+
+// Голова //
+.b-header
+ background-color: #ffffff
+ @extend .grid_all
+ @extend .padding_all
+ grid-template-columns: repeat(2,1fr)
+ grid-template-rows: 50px 50px
+ grid-row-gap: 30px
+ &_border-top_green
+   border-top: 5px solid $color-green
+
+// Лого компании //
+.b-logo
+ &_grid
+   grid-row-start: 1
+   grid-row-end: 3
+   grid-column-start: 1
+   grid-column-end: 2
+   margin: auto 0
+ &__description_style
+   color: #6c6c6c
+   font-weight: 400
+ &__name
+   &_style
+    font-size: 40px
+    color: black
+    &:first-letter
+      font-size: 54px
+
+// Социальные сети //
+.b-social
+ padding:
+  left: 20px
+  right: 20px
+ &_theme_green
+  background-color: $color-green
+  border-radius: 0 0 20px 20px
+  margin-left: auto
+ &__icon_theme
+  display: inline-block
+  width: 30px
+  height: 30px
+  float: left
+  text-align: center
+  font-size: 25px
+  color: #ffffff
+  background-color: #1f1f1f
+  margin-right: 10px
+  border-radius: 50%
+  justify-content: center
+  align-items: center
+  padding: 5px 5px
+
+//menu - бургер //
+.b-menu
+ &_theme_green
+   padding: 20px 30px 20px 30px
+   background-color: $color-green
+ &__item_style
+   list-style-type: none
+   float: left
+   margin-right: 20px
+   a
+    text-decoration: none
+    color: white
+
+//менюшка справа, регистрация и так далее //
+.b-authoriz
+ &_pos
+  margin: auto 0 auto auto
+ &__item_style
+   list-style-type: none
+   float: left
+   color: $color-green
+   margin-left: 5px
+   a
+    text-decoration: none
+    color: $color-green
+
+.b-search-form
+  float: right
+
+//слайдер с картинками //
+.slider_cont
+  padding: 30px 0
+  background-color: #f2f2f2
+//первая лабуда с картинками//
+.services
+ padding: 50px 30px
+ &_grid
+  @extend .grid_all
+  grid-template-columns: repeat(4,1fr)
+  grid-template-rows: repeat(2,1fr)
+  grid-column-gap: 27px
+  grid-row-gap: 80px
+ &_theme
+   background-color: white
+ &__viva_text
+   text-align: center
+   font-family: Geo
+   font-size: 13px
+   font-weight: 400
+   line-height: 20.8px
+   &_h4
+    color: $color-green
+    font-family: Geo
+    font-size: 18px
+    font-weight: 400
+    line-height: 21.6px
+    padding-bottom: 20px
+ &__progect
+  &_img
+   width: 200px
+   height: 130px
+  &_link
+  text-decoration: none
+   color: $color-green
+   font-family: Geo
+   font-size: 13px
+   font-weight: 400
+   line-height: 13px
+   float: right
+// займемся подвалом //
+.footer
+ &_grid
+  @extend .grid_all
+  grid-template-columns: repeat(4,1fr)
+  grid-template-rows: auto
+ &__contact

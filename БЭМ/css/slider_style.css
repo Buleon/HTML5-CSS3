@@ -22,7 +22,7 @@
 	height:16px;
 	overflow:hidden;
 	text-indent:-9999px;
-	background:url(radioBg.png) center bottom no-repeat;}
+	background:url(../slider/radioBg.png) center bottom no-repeat;}
 .sli-links .control-slide:hover{
 	cursor:pointer;
 	background-position:center center;}
@@ -36,13 +36,13 @@
 	top:0;
 	overflow:hidden;
 	text-indent:-999px;
-	background:url(arrowBg.png) left center no-repeat;
+	background:url(../slider/arrowBg.png) left center no-repeat;
 	opacity:0.8;
 	z-index:3;
 	outline:none !important;}
 #prewbutton{left:10px;}
 #nextbutton{
 	right:10px;
-	background:url(arrowBg.png) right center no-repeat;}
+	background:url(../slider/arrowBg.png) right center no-repeat;}
 #prewbutton:hover, #nextbutton:hover{
 	opacity:1;}

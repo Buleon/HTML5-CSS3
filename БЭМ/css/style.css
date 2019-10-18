@@ -9,7 +9,7 @@
   display: grid;
   padding: 30px 30px;
 }
-header {
+.b-header {
   background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -17,7 +17,10 @@ header {
   grid-row-gap: 30px;
   padding: 0 30px;
 }
-.logo_grid {
+.b-header_border-top_green {
+  border-top: 5px solid #81b300;
+}
+.b-logo_grid {
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 1;
@@ -32,14 +35,11 @@ header {
   padding: 20px 30px 20px 30px;
   background-color: #81b300;
 }
-.header_border-top_green {
-  border-top: 5px solid #81b300;
-}
-.social {
+.b-social {
   width: 250px;
   height: 50px;
 }
-.social_theme_green {
+.b-social_theme_green {
   background-color: #81b300;
   border-radius: 0px 0px 20px 20px;
   margin-left: auto;
